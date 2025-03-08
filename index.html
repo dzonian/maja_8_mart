@@ -75,7 +75,7 @@
                     continue;
                 }
                 
-                if (item.y + item.height > player.y && item.x < player.x + player.width && item.x + item.width > player.x) {
+                if (item.y + item.height > player.y && item.y < player.y + player.height && item.x < player.x + player.width && item.x + item.width > player.x) {
                     score += item.value;
                     items.splice(i, 1);
                     i--;
