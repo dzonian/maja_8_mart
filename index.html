@@ -37,8 +37,8 @@
         const ctx = canvas.getContext("2d");
         const startButton = document.getElementById("startButton");
         
-        canvas.width = 375;
-        canvas.height = 667;
+        canvas.width = window.innerWidth;  // Set canvas width to window width
+        canvas.height = window.innerHeight;  // Set canvas height to window height
         
         const goodFoods = ["meat.png", "spinach.png", "lemon.png", "garlic.png"];
         const badFoods = ["alcohol.png", "coffee.png", "cigarettes.png", "fat.png"];
